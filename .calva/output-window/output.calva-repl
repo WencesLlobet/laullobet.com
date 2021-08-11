@@ -20,5 +20,8 @@ clj꞉shadow.user꞉>  ; Use `alt+enter` to evaluate
 ; Connecting cljs repl: shadow-cljs...
 ;   The Calva Connection Log might have more connection progress information.
 ; Failed starting cljs repl
-; Jack-in done.
-clj꞉shadow.user꞉> 
+; Jack-in done.ex
+clj꞉shadow.user꞉> 
+exit
+
+; nREPL Connection was closed
