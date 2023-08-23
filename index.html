@@ -68,6 +68,11 @@ var styles = `
 .test:hover ~ .test2 {
   display: none;
 }
+
+body {
+    -moz-transform: scale(1.7); /* for Firefox, default 1*/
+    zoom:170%; /* For Chrome, IE, default 100%*/
+}
 `
 window.document.onkeydown = function(e) {
   if (!e) {
