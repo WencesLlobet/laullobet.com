@@ -133,7 +133,7 @@ function setCookie(cname, cvalue) {
 
     function myFunc(thisy)
     {
-      var id= thisy.id
+      var id= thisy.getAttribute("id")
       var ps = getCookie("ps")    
       if(ps){
           ps = ps.split(",")
