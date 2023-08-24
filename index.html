@@ -155,9 +155,9 @@ function setCookie(cname, cvalue) {
 
 <body>
 
-
-<h2 onMouseOver="this.style.fontWeight = 'bold'" onMouseOut="this.style.fontWeight = 'normal'"  style="margin:0.625rem;font-family: Courier" onclick="laullobet()">Lau Llobet</h2>
-<h2  style="margin:0.625rem;font-family: Courier;font-size: 0.7rem" onclick="laullobet()">lau.llobet @ gmail.com</h2>
+ <div style="margin:3.7rem;" > 
+<h2  style="margin:0.625rem;font-family: Courier;font-weight: normal" onclick="laullobet()">Lau Llobet</h2>
+</br>
 
 <button  id="1-aaa" href="https://buy.stripe.com/test_14k6oFeHA1hDdxK3ce" onMouseOver="this.style.border='0.16rem solid #000000'" onMouseOut="this.style.border='0.06rem solid #000000'" 
 style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 0.06rem solid ; background: white" type=”button” onClick="myFunc(this);">3,43&euro;</button>
@@ -169,17 +169,19 @@ style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 
   style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 0.06rem solid ; background: white" type=”button” onClick="myFunc(this);">22,1&euro;</button>
   <button  id="5-ee"  href="https://buy.stripe.com/test_00geVb7f8e4p8dq5kp"  onMouseOver="this.style.border='0.16rem solid #000000'" onMouseOut="this.style.border='0.06rem solid #000000'" 
   style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 0.06rem solid ; background: white" type=”button” onClick="myFunc(this);">10,10&euro;</button>
-
+  <div  style="margin:0.625rem;font-family: Courier;font-size: 0.7rem; position: absolute; bottom:3.7rem;font-weight: thin" onclick="laullobet()">lau.llobet@gmail.com</div>
+</div>
         <script>
             var id = "10"
 
             
 
             function presentaComoComprado(id){
-                document.getElementById(id).style = "margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 0.12rem solid ; background: #e6e6e6" 
-                document.getElementById(id).onmouseover = undefined
-                document.getElementById(id).onmouseout = undefined
-                document.getElementById(id).textContent = document.getElementById(id).textContent.substring(0,document.getElementById(id).textContent.length-1)+" A"
+                document.getElementById(id).style = "margin:0.625rem;height:10rem;width:6.2rem;font-family: Arial;  border: 0.12rem solid ; background: #e6e6e6;text-decoration: line-through;text-decoration-thickness: 1.4px;" 
+                document.getElementById(id).setAttribute("onMouseOver","this.style.border='0.13rem solid #000000'") 
+                document.getElementById(id).setAttribute("onMouseOut","this.style.border='0.06rem solid #000000'") 
+               // document.getElementById(id).onmouseout = "border: '0.06rem solid #000000'"
+               // document.getElementById(id).textContent = document.getElementById(id).textContent.substring(0,document.getElementById(id).textContent.length-1)+" A"
                 console.log(document.getElementById(id))
               }
 
@@ -188,7 +190,7 @@ style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 
                 fetch(theUrl, { mode: 'no-cors'})
             }
 
-            var email = "laullobet@gmail.com"
+            var email = "no hay"
 
 
             function playvideo(id){
