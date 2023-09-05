@@ -22,7 +22,8 @@ var styles = `
 }
 
 .container {
-  display: flex;
+  display: none;
+  overflow: visible;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -93,9 +94,11 @@ window.document.onkeydown = function(e) {
 function lightbox_open() {
   var lightBoxVideo = document.getElementById("VisaChipCardVideo");
   window.scrollTo(0, 0);
-  document.getElementById('light').style.display = 'block';
-  document.getElementById('fade').style.display = 'block';
+  console.log(document.getElementById('video-container'))
+  document.getElementById('video-container').style.display = 'flex';
   lightBoxVideo.play();
+  console.log("fullscreening")
+  console.log(document.getElementById('video-container').style)
   launchIntoFullscreen(document.getElementById('video-container'));
 }
 
@@ -169,7 +172,7 @@ function setCookie(cname, cvalue) {
 
 <button  id="1-aaa" href="https://buy.stripe.com/test_14k6oFeHA1hDdxK3ce" onMouseOver="this.style.border='0.16rem solid #000000'" onMouseOut="this.style.border='0.06rem solid #000000'" 
 style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 0.06rem solid ; background: white; font-size: 1.1rem;" type=”button” onClick="myFunc(this);">3,43&euro;</button>
-<button  id="2-bb" href="https://buy.stripe.com/test_6oE6oFarkd0l8dq9AB" onMouseOver="this.style.border='0.16rem solid #000000'" onMouseOut="this.style.border='0.06rem solid #000000'" 
+<button class="btn_launch" id="2-bb" href="https://buy.stripe.com/test_6oE6oFarkd0l8dq9AB" onMouseOver="this.style.border='0.16rem solid #000000'" onMouseOut="this.style.border='0.06rem solid #000000'" 
  style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 0.06rem solid ; background: white; font-size: 1.1rem;" type=”button” onClick="myFunc(this);">4,13&euro;</button>
 <button  id="3-cc"  href="https://buy.stripe.com/test_00gaEVeHAe4p65i6or" onMouseOver="this.style.border='0.16rem solid #000000'" onMouseOut="this.style.border='0.06rem solid #000000'" 
  style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 0.06rem solid ; background: white; font-size: 1.1rem;" type=”button” onClick="myFunc(this);">30,40&euro;</button>
@@ -275,6 +278,40 @@ style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 
                 window.location.search= ""
             } 
 
+            document.addEventListener('click', function (event) {
+  if (!event.target.matches('.btn')) return;
+
+  event.preventDefault();
+
+  const fullscreenElement =
+    document.fullscreenElement ||
+    document.mozFullScreenElement ||
+    document.webkitFullscreenElement ||
+    document.msFullscreenElement;
+  if (fullscreenElement) {
+    exitFullscreen();
+  } else {
+    launchIntoFullscreen(document.getElementById('video-container'));
+  }
+});
+
+document.addEventListener('click', function (event) {
+  if (!event.target.matches('.btn_launch')) return;
+
+  event.preventDefault();
+
+  const fullscreenElement =
+    document.fullscreenElement ||
+    document.mozFullScreenElement ||
+    document.webkitFullscreenElement ||
+    document.msFullscreenElement;
+  if (fullscreenElement) {
+    exitFullscreen();
+  } else {
+    launchIntoFullscreen(document.getElementById('video-container'));
+  }
+});
+
 document.addEventListener('click', function (event) {
   if (!event.target.matches('.btn')) return;
 
@@ -292,6 +329,7 @@ document.addEventListener('click', function (event) {
   }
 });
 
+
 function launchIntoFullscreen(element) {
   if (element.requestFullscreen) {
     element.requestFullscreen();
@@ -307,6 +345,7 @@ function launchIntoFullscreen(element) {
 }
 
 function exitFullscreen() {
+  document.getElementById('video-container').style.display = 'none';
   if (document.exitFullscreen) {
     document.exitFullscreen();
   } else if (document.mozCancelFullScreen) {
@@ -321,7 +360,7 @@ function exitFullscreen() {
 <div id="video-container" class="container">
     <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
         <div class="btn" id="fullscreen" style="font-family: Courier;"><-</div>
-        <video id="VisaChipCardVideo" width="600" autoplay playsinline src="1-aa.mp4">
+        <video id="VisaChipCardVideo" width="100%" autoplay playsinline controls src="1-aa.mp4">
           <source id="projector" type="video/mp4">
           <!--Browser does not support <video> tag -->
         </video>
