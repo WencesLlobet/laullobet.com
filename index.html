@@ -81,7 +81,7 @@ window.document.onkeydown = function(e) {
     e = event;
   }
   if (e.keyCode == 27) {
-    lightbox_close();
+    exitFullscreen();
   }
 }
 
@@ -98,8 +98,6 @@ function lightbox_open() {
 
 function lightbox_close() {
   var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  document.getElementById('light').style.display = 'none';
-  document.getElementById('fade').style.display = 'none';
   lightBoxVideo.pause();
 }
 
@@ -339,6 +337,7 @@ function launchIntoFullscreen(element) {
 }
 
 function exitFullscreen() {
+  lightbox_close()
   document.getElementById('video-container').style.display = 'none';
   if (document.exitFullscreen) {
     document.exitFullscreen();
@@ -359,12 +358,6 @@ function exitFullscreen() {
           <!--Browser does not support <video> tag -->
         </video>
    </div>
-  </div>
-  
-  <div id="fade" onClick="lightbox_close();"></div>
-  
-  <div>
-    <a href="#" onclick="lightbox_open();"></a>
   </div>
 </body>
 
