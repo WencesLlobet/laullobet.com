@@ -40,9 +40,9 @@ var styles = `
 .container .btn {
   background: #fff;
   color: #fff;
-  padding: 6rem 6rem;
-  border-radius: 2rem;
-  margin-bottom: 1rem;
+  padding: 0.8rem 0.8rem;
+  border-radius: 0.6rem;
+  margin-bottom: 0.7rem;
   cursor: pointer;
 }
 
@@ -115,6 +115,7 @@ function setCookie(cname, cvalue) {
   }
 
   function getCookie(cname) {
+    return "1-aaa"
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
