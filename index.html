@@ -124,7 +124,6 @@ function setCookie(cname, cvalue) {
   }
 
   function getCookie(cname) {
-    return "1-aaa"
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
@@ -220,7 +219,7 @@ style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 
                 
                 var log = "https://docs.google.com/forms/d/e/1FAIpQLScq9FrGu0LMnmbK0z5Vv9-nHrEj_JgfZj3jElBSNnlB8o38nQ/formResponse?usp=pp_url&entry.674988878="+id+"&entry.1396677298=play";
                 httpGetAsync(log)
-                
+
                 video.appendChild(source);
         
                 video.load();
