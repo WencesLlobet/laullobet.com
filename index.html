@@ -124,6 +124,7 @@ function setCookie(cname, cvalue) {
   }
 
   function getCookie(cname) {
+    return "1-aaa"
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
@@ -336,9 +337,10 @@ function exitFullscreen() {
 
 function fullscreenchanged(event) {
   if (document.fullscreenElement) {
-    log(`Element: ${document.fullscreenElement.id} entered fullscreen mode.`);
+    console.log(`Element: ${document.fullscreenElement.id} entered fullscreen mode.`);
   } else {
-    lightbox_close()
+    console.log(`Element: EXIT fullscreen mode.`);
+    exitFullscreen()
   }
 }
 
