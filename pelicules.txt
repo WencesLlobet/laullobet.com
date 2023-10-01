@@ -1,0 +1,334 @@
+/Volumes/WD/pelicules/
+├── abel gance
+│   ├── Beethoven.avi
+│   ├── Folie du Docteur Tube (1915) Abel Gance a.avi
+│   ├── La fin du monde.avi
+│   ├── Napoleon-1927-Abel Gance CD1.avi
+│   ├── Napoleon-1927-Abel Gance CD2.avi
+│   └── austerlitz.avi
+├── almodovar
+│   ├── AlmodovAr - kika (1993).avi
+│   ├── Almodovar - Carne Tremula.avi
+│   ├── Almodovar - La Ley del deseo (1986).avi
+│   ├── Almodovar - Laberinto de pasiones (1982).avi
+│   ├── Almodovar 1983 Entre Tinieblas Dvdrip Xvid-Txxz.avi
+│   ├── Pedro Almodovar - 1990 - Amantes.avi
+│   ├── Pedro Almodovar - Atame.avi
+│   ├── Pedro Almodovar - La Flor De Mi Secreto 1995.avi
+│   └── Tacones Lejanos - 1991 - Dvdrip Divx 5.05 - Victoria Abril, Miguel Bose, Pedro Almodovar.avi
+├── altres
+│   ├── A Man for All Seasons (1966)
+│   ├── Blade.Runner.1982.Final.Cut.1080p.BluRay.x264.anoXmous
+│   ├── Day Of Wrath (1943) [BluRay] [1080p] [YTS.LT]
+│   ├── Glinka (1946)
+│   ├── Harold Pinter - The Birthday Party (1968).avi
+│   ├── Romeo & Juliet - Prokofiev (1954) Ulanova, Zhdanov, Bolshoi
+│   ├── The Red Balloon
+│   ├── The.Tin.Drum.1979.DC.CRITERION.720p.BluRay.x264.anoXmous
+│   ├── Waterloo.1970.720p.BluRay.x264-[YTS.LT].mp4
+│   ├── vol 1 The American Folk Blues Festival 1962 1966.mp4
+│   ├── vol 2 The American Folk Blues Festival 1962 - 1966.mp4
+│   ├── vol 3 American Folk Blues Festival 1962 - 1969.mp4
+│   ├── vol 4   The American Folk Blues Festival 1962 1966 .mp4
+│   └── vol brit American Folk Blues Festivals 1963-1966- The British Tours.mp4
+├── antonioni
+│   ├──  L'avventura.avi
+│   ├──  L'avventura.es.srt
+│   ├── Blow-Up (Michelangelo Antonioni, 1966).avi
+│   ├── DesertoRosso-Antonioni-1964-Film Prestige.avi
+│   ├── Eros.avi
+│   ├── Film - Antonioni - Il Grido.avi
+│   ├── Identificazione di una donna.avi
+│   ├── Il Mistero di Oberwald (Michelangelo Antonioni, 1980) DVDRip DivXClasico.avi
+│   ├── L'Eclisse (L' Eclipse) 1962 Michelangelo Antonioni - Monica Vitti, Alain Delon, Francisco Rabal -.avi
+│   ├── L'Eclisse.avi
+│   ├── L'Eclisse.es.srt
+│   ├── L'Eclisse.srt
+│   ├── La Notte.avi
+│   ├── Michelangelo Antonioni - Chung Kuo (Real Video)
+│   ├── Michelangelo Antonioni - Chung Kuo (Real Video).zip
+│   ├── [Film] M.Antonioni 1960 L'avventura (Ita).avi
+│   ├── [Film] M.Antonioni 1960 L'avventura (Ita).srt
+│   └── professione.reporter.1975.dvdrip.xvid-mess.avi
+├── arcaic
+│   ├── Ivan.1932.DivX.DVDRip
+│   └── Michael (1924) [BluRay] [1080p] [YTS.LT]
+├── asiatic classic
+│   ├── A Story From Chikamatsu (1954) [1080p] [BluRay] [YTS.MX]
+│   ├── Dersu Uzala (1975) [720p] [BluRay] [YTS.MX]
+│   ├── Geisha Stories (Kenji Mizoguchi + BBC) Japanese with English subtitles
+│   ├── Rashomon (1950) [BluRay] [720p] [YTS.AM]
+│   ├── Street Of Shame (1956) [1080p] [BluRay] [YTS.MX]
+│   ├── The Story Of The Last Chrysanthemum (1939) [1080p] [BluRay] [YTS.MX]
+│   └── Tokyo.March.1929.Mizoguchi
+├── bergman
+│   ├── Smiles Of A Summer Night (1955) [BluRay] [720p] [YTS.AM]
+│   └── Sommarnattens.leende.1955.GER.BDRemux. rutracker.mkv
+├── bertolucci
+│   └── XSoñadores.Bernardo Bertolucci.2003.avi
+├── bresson
+│   ├── Au hasard Balthazar (1966) Robert Bresson.avi
+│   ├── Au hasard Balthazar (1966) Robert Bresson.srt
+│   ├── Au hasard Balthazar Robert Bresson.es.avi
+│   ├── Au hasard Balthazar Robert Bresson.es.srt
+│   ├── Diary of a Country Priest (1951) Robert Bresson.avi
+│   ├── Diary of a Country Priest (1951) Robert Bresson.srt
+│   ├── Jean D'Arc - Subs incl - bresson.mp4
+│   ├── Le Procès de Jeanne d'Arc (Robert Bresson, 1962).avi
+│   ├── Pickpocket (1959) cas.srt
+│   ├── Pickpocket.avi
+│   ├── Pickpocket.es.srt
+│   ├── Robert Bresson - Un condamné à mort s'est échappé ou Le vent souffle où il veut (a man escaped) (1956) [2CD, .srt-subs ENG]
+│   └── The.Passion.of.Joan.of.Arc.1928.720p.BluRay.x264-GABE
+├── brook
+│   ├── Gurdjieff - Meetings With Remarkable Men.avi
+│   ├── Gurdjieff - Meetings With Remarkable Men.es.srt
+│   ├── Marat_Sade.avi
+│   ├── PeterBrooks.Mahabharata.1.avi
+│   ├── PeterBrooks.Mahabharata.1.srt
+│   ├── PeterBrooks.Mahabharata.2.avi
+│   ├── PeterBrooks.Mahabharata.2.srt
+│   ├── mahbharata en
+│   └── Модерато Кантабиле.mkv
+├── buñuel
+│   ├── A Proposito De Buñuel - Documental (1900-2000).avi
+│   ├── Cet obscur objet du désir (1977)(spanish-by Arremula).srt
+│   ├── El discreto encanto de la burguesia (Luis Buñuel 1972) DVDrip dual Frances-Español (vhs sound) by Pasanen y Apolo 8000.avi
+│   ├── La Vía Láctea (La Voie Lactée) [Luis Buñuel, 1969].avi
+│   ├── Los Olvidados (Luis Buñuel) (1950).avi
+│   ├── Luis Buel - Ese Oscuro Objeto Del Deseo.srt
+│   ├── Luis Buñuel - Ese oscuro objeto del deseo.avi
+│   ├── Luis Buñuel - Ese oscuro objeto del deseo.es.srt
+│   ├── Luis Buñuel 1954 Las Aventuras De Robinson Crusoe.avi
+│   ├── Susana Carne y Demonio (Luis Buñuel, 1950) SatRip español subt. italiano.avi
+│   ├── Tristana (Luis Bunuel 1970) Dvdrip By George Kaplan.avi
+│   └── Viridiana (Luis Buñuel - 1961).avi
+├── chaplin
+│   ├── 1916 - Charles Chaplin - Charlot Bombero (The Fireman) - DVDrip.avi
+│   ├── 1917 - Charles Chaplin - Charlot En El Balneario (The Cure) - Dvdrip.avi
+│   ├── 73-Charles Chaplin-1923 Charlot En Una Mujer De París A Woman Of París 81' 05'' Títulos En Inglés Y En Español.avi
+│   ├── CHARLIE.CHAPLIN.-.Charlot.en.la.Playa.Divx.5.0.4.avi
+│   ├── Charles Chaplin - La Quimera Del Oro (Original Remasterizada Sub Español).avi
+│   ├── Charles-Chaplin-(Charlot)-El Chico (The Kid) (1921) - [Español] -The Kid (El Chico) Charlie Chaplin Xvid Ac3 Dvdrip-Axxo.avi
+│   ├── Charlie Chaplin - Modern Times (1936)
+│   ├── Charlie Chaplin - The Gold Rush (1925)
+│   ├── Charlie Chaplin - The Great Dictator (1940)
+│   ├── Luci Della Città (Charlie Chaplin) 1931 - muto-ita.avi
+│   ├── Thumbs.db
+│   ├── Tiempos Modernos - (Charles Chaplin) - Dvdrip Spanish By Grupokuñaorips.avi
+│   ├── Un.Dia.De.Placer.(1919.Charles.Chaplin)(subt.Castellano).(SpanishSUB).(DVB-Rip).(XviD-mp3).(by.Ethan.Duke).avi
+│   └── charles chaplin 1914 - charlot árbitro de boxeo.avi
+├── cocteau
+│   ├── Jean.Cocteau.&.Hans.Richter.-.8x8.A.Chess.Sonata.avi
+│   ├── La Belle et la Bete.avi
+│   ├── La Belle et la Bete.es.srt
+│   ├── La belle et la bête
+│   ├── Le Testament D'Orphee 1960.avi
+│   ├── Le Testament D'Orphee 1960.es.srt
+│   ├── Orphee (Jean Cocteau)(1950).avi
+│   ├── Orphee (Jean Cocteau)(1950).es.srt
+│   ├── The blood of a poet 1933.avi
+│   └── The blood of a poet 1933.es.srt
+├── contemporaneas
+│   ├── Eat That Question - Frank Zappa in His Own Words [2016]
+│   ├── Hannah.Arendt.2012.LiMiTED.DVDRip.x264-GALT[rarbg]
+│   ├── La.La.Land.2016.1080p.BluRay.x265-RARBG
+│   ├── Life.of.Pi.2012.DVDSCR
+│   ├── Tangerines.2013.LIMITED.SUBBED.DVDRip.x264-RedBlade[rarbg]
+│   ├── The Mill And The Cross (2011) [BluRay] [1080p] [YTS.AM]
+│   ├── The Mill and the Cross [2011] 720p BRRiP x264 - ETRG.mp4
+│   ├── The.Crucible.1996.1080p.BluRay.x265-RARBG
+│   ├── Troy (2004) DC (1080p BDRip x265 10bit TrueHD 5.1 - r0b0t) [TAoE].mkv
+│   └── tom stoppard - Billy.Bathgate.1991.1080p.BluRay.x265-RARBG
+├── fellini
+│   ├── (DivX - ITA) I Vitelloni - Alberto Sordi, Regia F.Fellini - 1953.avi
+│   ├── (DivX - ITA) I Vitelloni - Alberto Sordi, Regia F.Fellini - 1953.es.srt
+│   ├── And the Ship Sails On
+│   ├── Federico Fellini - La Strada
+│   ├── Fellini - Satyricon (1969).x264.Ita.Spa.Fra.Ger.multisub.mkv
+│   ├── Fellini Ginger e Fred
+│   ├── Fellinis Casanova - Spielfilm Italien-USA 1976 (Il Casanova di Federico Fellini).mp4
+│   ├── Juliet Of The Spirits
+│   ├── Prova.D'Orchestra.AKA.Orchestra.Rehearsal.1978.DVDRip.x264.es.srt
+│   ├── Prova.D'Orchestra.AKA.Orchestra.Rehearsal.1978.DVDRip.x264.mkv
+│   ├── Roma.(1972).FELLINI-Subs.espa╟ёol.ssa
+│   ├── The.Clowns.1970.ITALIAN.720p.BluRay.H264.AAC-VXT
+│   ├── [DivX - ITA] Federico Fellini - Roma (1972).avi
+│   ├── otto e mezzo.cd1.avi
+│   ├── otto e mezzo.cd1.es.srt
+│   ├── otto e mezzo.cd2.avi
+│   └── otto e mezzo.cd2.es.srt
+├── godard
+│   ├── A bout de souffle.avi
+│   ├── A bout de souffle.es.srt
+│   ├── A bout de souffle.srt
+│   ├── Pierrot.Le.Fou.1965.DVDRip.DivX.avi
+│   ├── Pierrot.Le.Fou.1965.DVDRip.DivX.es.srt
+│   ├── [www.Cpasbien.me] Vous.N.Avez.Encore.Rien.Vu.2012.FRENCH.DVDRip.XviD-UTT.avi
+│   └── [www.Cpasbien.me] Vous.N.Avez.Encore.Rien.Vu.2012.FRENCH.DVDRip.XviD-UTT.es.srt
+├── greenaway
+│   ├── 8halfwomen.avi
+│   ├── A Zed And Two Noughts - Peter Greenaway.avi
+│   ├── A Zed And Two Noughts - Peter Greenaway.en.srt
+│   ├── Drowning by Numbers.avi
+│   ├── Drowning by Numbers.es.srt
+│   ├── Greenaway - Zandra Rhodes
+│   ├── Las.maletas.de.Tulse.Luper.Dual.CD1.avi
+│   ├── Las.maletas.de.Tulse.Luper.Dual.CD2.avi
+│   ├── Nightwatching (2007) [BluRay] [1080p] [YTS.LT]
+│   ├── Nightwatching 2007 BRRip XvidHD 720p-NPW [NO-RAR] - [ www.torrentday.com ]
+│   ├── PETER GREENAWAY a Documentary.mp4
+│   ├── Peter Greenaway -Vertical Features Remake 1976.avi
+│   ├── Prosperos Books PAL DVD DD5.1 x264 Tree
+│   ├── The Baby of Mâcon
+│   ├── The Belly of An Architect- DVDRip - Vo- sub pt-br
+│   ├── The Cook, the Thief, His Wife & Her Lover (1989) [1080p]
+│   ├── The draughtsman's contract. Peter Greenaway
+│   ├── The.Belly.Of.An.Architect.1987.720p.BluRay.x264-CiNEFiLE [PublicHD]
+│   ├── [Peter Greenaway & Tom Phillips] [1989] A TV Dante.avi
+│   └── the.draughtsmans.contract.(1982).spa.1cd.(82483)
+├── herzog
+│   ├── Aguirre, Der Zorn Gottes.avi
+│   ├── Aguirre, Der Zorn Gottes.es.srt
+│   ├── Aguirre, Der Zorn Gottes.srt
+│   ├── Aguirre.La.Colera.De.Dios.Spanish.XviD.MP3.DVDRiP.By.Caramono.SEDG.avi
+│   └── Even Dwarfs Started Small English subtitles.avi
+├── hirthcock
+│   ├── Alfred.Hitchcock.(1948)..La.soga.Caildad.Excelente.dvdrip.spanish_[by_tomatito].avi
+│   ├── Thumbs.db
+│   └── alfred hitchcock - Con la muerte en los talones.avi
+├── hollywod dorat
+│   ├── A Streetcar Named Desire (1951) [BluRay] [720p] [YTS.AM]
+│   ├── A.Foreign.Affair.1948.1080p.BluRay.x265-RARBG
+│   ├── El bazar de las sorpresas.Ernst Lubitsch 1940.TVRip.Spanish.DivX5.02.by.prp.avi
+│   └── Thumbs.db
+├── italianes
+│   ├── El Ladrón De Bicicletas - Vittorio De Sica 1948.avi
+│   ├── I Racconti Di Canterbury (Pierpaolo Pasolini - 1972).avi
+│   └── L'age d'or 1930.Luis.Bunuel restaurato.avi
+├── kramer
+│   ├── Bless the Beasts and Children 1971 DVDRip XViD[SN]
+│   ├── Guess.Whos.Coming.To.Dinner.1967.1080p.BluRay.x265-RARBG
+│   ├── Inherit.the.Wind.1960.1080p.BluRay.x265-RARBG
+│   ├── It's A Mad, Mad, Mad, Mad World (1963) [1080p] [YTS.AG]
+│   ├── No seras un extra├▒o (1955).Subtitulos.Espa├▒ol.[filibusteros.com].por.Marc27.srt
+│   ├── Not.As.A.Stranger.1955.DVDRip.x264-RedBlade.mkv
+│   ├── On.The.Beach.1959.1080p.BluRay.x265-RARBG
+│   ├── Ship of Fools (1965) [1080p]
+│   ├── The Runner Stumbles (1979) [720p] [BluRay] [YTS.MX]
+│   └── The.Defiant.Ones.1958.1080p.BluRay.x265-RARBG
+├── kubrick
+│   ├── 1962 - Lolita.avi
+│   ├── 1999 Eyes wide shut (Eyes wide shut).avi
+│   ├── Atraco.Perfecto.[Stanley.Kubrick].[DVDivX.Spanish].avi
+│   ├── Espartaco.Stanley Kubrick 1960.[Spanish.DvDRip].[XviD.1.0.3 Mp3].by.SDG.avi
+│   ├── Judgment.at.Nuremberg.1961.INTERNAL.1080p.BluRay.X264-AMIABLE[rarbg]
+│   ├── Paths.Of.Glory.1957.1080p.BluRay.x265-RARBG
+│   └── Senderos De Gloria [Stanley Kubrick] [DVDivX Spanish].avi
+├── resnais
+│   ├── Hiroshima mon amour - Alain Resnais (1959)-14.srt
+│   ├── Hiroshima.Mon.Amour.Resnais.French.Divx.avi
+│   ├── Hiroshima.Mon.Amour.Resnais.French.Divx.es.srt
+│   ├── L'Annee derniere a Marienbad.avi
+│   ├── Van Gogh (Alain Resnais, 1948).avi
+│   └── [www.Cpasbien.me] Vous.N.Avez.Encore.Rien.Vu.2012.FRENCH.DVDRip.XviD-UTT
+├── rohmer
+│   ├── Conte.De.Printemps.Rohmer.1990.DVDRiP.Divx-vo.avi
+│   ├── Conte.De.Printemps.Rohmer.1990.DVDRiP.Divx-vo.es.srt
+│   ├── Conte.dautomne.FR.Eric.Rohmer.1998.avi
+│   ├── Conte.dautomne.FR.Eric.Rohmer.1998.es.srt
+│   ├── Conte.dautomne.FR.Eric.Rohmer.1998.fr.srt
+│   ├── Conte.dautomne.FR.Eric.Rohmer.1998.srt
+│   ├── Cuento de verano (Conte d'été) (Eric Rohmer - 1995).avi
+│   ├── Eric Rohmer - La coleccionista [español] - Eric Rohmer.avi
+│   ├── Eric Rohmer - Les Metamorphoses du paysage (1964).avi
+│   ├── Eric Rohmer - Les Metamorphoses du paysage (1964).es.srt
+│   ├── Eric Rohmer -- CONTE D'HIVER (1992).avi
+│   ├── Eric Rohmer -- CONTE D'HIVER (1992).es.srt
+│   ├── Eric_Rohmer-Le_genou_de_Claire-AKA-Claire_s_knee-1970
+│   ├── Fr - Brigitte et Brigitte (1966) - De Luc Moullet, avec Samuel Fuller, Eric Rohmer, Claude Chabrol - (Film DivX Classique N&B no erotique).avi
+│   ├── L Ami De Mon Ami.es.srt
+│   ├── L'Ami De Mon Ami (Eric Rohmer 1987-Dual).avi
+│   ├── L'Ami De Mon Ami (Eric Rohmer 1987-Dual).es.srt
+│   ├── L'Ami De Mon Ami (Eric Rohmer 1987-Dual).srt
+│   ├── La Marquesa de O .avi
+│   ├── La Marquesa de O .es.srt
+│   ├── La Marquesa de O.srt
+│   ├── Lancelot du Lac
+│   ├── Le beau mariage (Rohmer, 1982).avi
+│   ├── Le beau mariage (Rohmer, 1982).en.srt
+│   ├── Le beau mariage (Rohmer, 1982).srt
+│   ├── Le.Genou.De.Claire.1970.DVDRip.XviD.avi
+│   ├── Le.Genou.De.Claire.1970.DVDRip.XviD.es.srt
+│   ├── Le.Journal.De.Cinema.1970.DVDRip.XviD.avi
+│   ├── Louis Lumiere.avi
+│   ├── Louis Lumiere.en.srt
+│   ├── Ma nuit chez Maud (E.Rohmer-1969) [J.L.Trintignant, F.Fabian, M.C.Barrault].avi
+│   ├── Ma nuit chez Maud (E.Rohmer-1969) [J.L.Trintignant, F.Fabian, M.C.Barrault].srt
+│   ├── Pauline At The Beach (1983) [720p] [BluRay] [YTS.MX]
+│   ├── Pauline En La Playa Eric Rohmer 1983.avi
+│   ├── Pauline En La Playa Eric Rohmer 1983.es.srt
+│   ├── Pauline.A.La.Plage.1983.[Eric.Rohmer].FRA.w.BRA-SUB.bitlord.avi
+│   ├── Perceval Le Gallois (Eric Rohmer, 1978, Avec Fabrice Luchini, Arielle Dombasle) - Fr[528x416].avi
+│   ├── Rohmer, Eric- Les nuits de la pleine lune - 1984 - DVDRip - MakingOff
+│   ├── Rohmer, Eric- Les nuits de la pleine lune - 1984 - DVDRip - MakingOff.avi
+│   ├── Rohmer, Eric- Les nuits de la pleine lune - 1984 - DVDRip - MakingOff.es.srt
+│   ├── The Bakery Girl of Monceau.avi
+│   ├── The Bakery Girl of Monceau.es.srt
+│   ├── [秋天的故事].Conte.dautomne.FR.Eric.Rohmer.1998.avi
+│   ├── [秋天的故事].Conte.dautomne.FR.Eric.Rohmer.1998.es.srt
+│   ├── [秋天的故事].Conte.dautomne.FR.Eric.Rohmer.1998.fr.srt
+│   ├── conte.d'ete.1996.eric.rohmer.dvdrip.xvid-graeme.avi
+│   ├── conte.d'ete.1996.eric.rohmer.dvdrip.xvid-graeme.es.srt
+│   ├── triple agent.avi
+│   └── triple agent.es.srt
+├── tarkovsky
+│   ├── Andrei Rublev (1).avi
+│   ├── Andrei Rublev (1).es.srt
+│   ├── Andrei Rublev (2).avi
+│   ├── Andrei Rublev (2).es.srt
+│   ├── El Espejo (Зеркало) (Andrei Tarkovsky, 1974) [VOS Spanish].avi
+│   ├── Nostalghia.(1983).Andrei.Tarkovsky.avi
+│   ├── Nostalghia.(1983).Andrei.Tarkovsky.es.srt
+│   ├── Ordet (La Palabra).avi
+│   ├── Solaris.1972.(Andrei.Tarkovsky).(CRITERION).DVDRip.XviD.AC3.(RUS).avi
+│   ├── Solaris.1972.(Andrei.Tarkovsky).(CRITERION).DVDRip.XviD.AC3.(RUS).es.srt
+│   ├── Stalker (La Zona, A. Tarkovsky, URSS 1979)cd2.avi
+│   ├── Stalker (La Zona, A. Tarkovsky, URSS 1979)cd2.es.srt
+│   ├── Steamroller and the Violin (1960, Tarkovsky, Russian, Eng sub).avi
+│   ├── Steamroller and the Violin (1960, Tarkovsky, Russian, Eng sub).es.srt
+│   ├── The.Sacrifice.aka.Offret.1986.720p.Bluray.x264.anoXmous.es.srt
+│   ├── The.Sacrifice.aka.Offret.1986.720p.Bluray.x264.anoXmous.mp4
+│   ├── Zerkalo_DVDRip.avi
+│   └── Zerkalo_DVDRip.es.srt
+└── visconti
+    ├── Bellissima.avi
+    ├── Bellissima.es.srt
+    ├── Conversation.Piece.1974.(Luchino.Visconti).1080p.BRRip.x264-Classics
+    ├── Giorni di Gloria (1945).avi
+    ├── L'Innocente.avi
+    ├── L'Innocente.es.srt
+    ├── L'Innocente.srt
+    ├── La.Terra.Trema.1948.(Luchino.Visconti).1080p.BRRip.x264-Classics
+    ├── Luchino Visconti - Giorni di Gloria AKA Days of Glory (1945)
+    ├── Luchino Visconti - The Stranger [1967].avi
+    ├── Luchino Visconti - The Stranger [1967].es.srt
+    ├── Luchino Visconti - Vaghe Stelle dell'Orsa (1965).avi
+    ├── Ludwig (1973) [1080p] [BluRay] [YTS.MX]
+    ├── Ludwig - Luchino Visconti part.1.avi
+    ├── Ludwig - Luchino Visconti part.2.avi
+    ├── Ludwig [a].srt
+    ├── Ludwig [b].srt
+    ├── Morte A Venezia.avi
+    ├── Morte A Venezia.es.srt
+    ├── Ossessione.avi
+    ├── Ossessione.en.srt
+    ├── Ossessione.es.srt
+    ├── Ossessione.es.srt.gz
+    ├── Rocco e i Suoi Fratelli.avi
+    ├── Rocco e i Suoi Fratelli.srt
+    ├── Senso [Luchino Visconti, 1954] It (Eng subs).avi
+    ├── Senso [Luchino Visconti, 1954] It (Eng subs).es.srt
+    └── mp4.The Secret of Santa Vittoria.mp4
+
+97 directories, 235 files

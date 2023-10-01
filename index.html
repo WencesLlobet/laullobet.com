@@ -12,13 +12,21 @@ var styles = `
 
 @media (max-width: 1000px) {
     html {
-      font-size: 190.5%;
+      font-size: 150.5%;
   }
 
   html *
   {
-    font-weight: bold !important;
+    /*font-weight: bold !important;*/
   }
+
+  body * {
+    margin: 4px !important;
+  }
+}
+body {
+    -moz-transform: scale(1); /* for Firefox, default 1*/
+    zoom:100%; /* For Chrome, IE, default 100%*/
 }
 
 .container {
@@ -80,10 +88,7 @@ var styles = `
   display: none;
 }
 
-body {
-    -moz-transform: scale(1); /* for Firefox, default 1*/
-    zoom:100%; /* For Chrome, IE, default 100%*/
-}
+
 `
 window.document.onkeydown = function(e) {
   if (!e) {
@@ -170,18 +175,18 @@ function setCookie(cname, cvalue) {
 <body>
 
  <div style="margin:3.7rem;" > 
-<h2  style="margin:0.625rem;font-family: Courier;font-weight: normal;font-size: 1.1rem; " onclick="laullobet()">LAU LLOBET</h2>
+<!---h2  style="margin:0.625rem;font-family: Courier;font-weight: normal;font-size: 1.1rem; " onclick="laullobet()">LAU LLOBET</h2>
 <br/>
-<br/><br/><br/><br/><br/><br/><br/>  
+<br/><br/---><br/><br/>
 <h2  style="margin:0.625rem;font-family: Courier;font-weight: normal;font-size: 1.1rem; " onclick="laullobet()">
   <pre>
- OCTUBRE 
+ <span style="font-family: Courier;font-weight: bold;"">OCTUBRE </span>
             
  Dll      Dt       Dc        Dj      Dv        Ds        Dg
 
- 2        3        <span  style="font-weight: bold;">4_shksp</span>   5       6         7         8  
+ 2        3        <span  style="font-weight: bold;">4_shake</span>   5       6         7         8  
 
- 9        10       11        12      <span  style="font-weight: bold;">13_bekt   14_bekt</span>   15  
+ 9        10       11        12      <span  style="font-weight: bold;">13_beck   14_beck</span>   15  
 
  16       17       18        19      <span  style="font-weight: bold;">20_malet</span>  21        22   
 
@@ -189,24 +194,29 @@ function setCookie(cname, cvalue) {
 
  30  
         
+
+ _shake:&nbsp;LEYENDO LOS SONETOS DE SHAKESPEARE / William Shakespeare
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Barcelona, Carrer Bigai 12 17h 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entrades al moment d'entrar 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 d'Octubre - Dimecres 
+
+ 
+ _beck:&nbsp;L'ÚLTIMA CINTA DE KRAPP / Samuel Bekett 
+ 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terrassa, C/Major de Sant Pere 59 21h
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.entrapolis.com/entradas/lultima-cinta-de-krapp-sergi-mateu">Entrades i Programa - AQUÍ</a>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13 i 14 d'Octubre - Divendres i Dissabte 
+
+ 
+ _malet:&nbsp;LA MARAVILLA DEL TEATRO - LA INTERPRETACION 
+                 (TRES MALETAS) / Alicia S.
+ 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tàrrega
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entrades no disponibles de moment 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20 d'Octubre - Divendres
+
 </pre>
-</br>_shksp:&nbsp;LEYENDO LOS SONETOS DE SHAKESPEARE / William Shakespeare
-</br>
-</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Barcelona, Carrer Bigai 3 17:30 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entrades al moment d'entrar 
-</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 d'Octubre - Dimecres </br>
-</br>
-</br>_bekt:&nbsp;L'ÚLTIMA CINTA DE KRAPP / Samuel Bekett 
-</br>
-</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sabadell 
-</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entrades no disponibles de moment 
-</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13 i 14 d'Octubre - Divendres i Dissabte </br>
-</br>
-</br>_malet:&nbsp;MARAVILLA DEL TEATRO - LA INTERPRETACION (TRES MALETAS) / Alicia S.
-</br>
-</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tàrrega
-</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entrades no disponibles de moment 
-</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20 d'Octubre - Divendres</br>
 </h2>
 
 </br>
@@ -222,7 +232,7 @@ style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 
   <button  id="5-ee"  href="https://buy.stripe.com/test_00geVb7f8e4p8dq5kp"  onMouseOver="this.style.border='0.16rem solid #000000'" onMouseOut="this.style.border='0.06rem solid #000000'" 
   style="margin:0.625rem;height:10rem;width:6.2rem;font-family: Courier;  border: 0.06rem solid ; background: white; font-size: 1.1rem;" type=”button” onClick="myFunc(this);">10,10&euro;</button-->
         <script>
-          document.write('<br/><br/><br/><br/><br/><br/><br/><br/><br/><div  style="margin:0.625rem;font-family: Courier;font-size: 1.1rem;font-weight: thin" onclick="laullobet()">'+"lau.llobet"+"@"+""+""+""+"g"+"ma"+"il.com"+'</div>')
+          document.write('<br/><br/><br/><br/><div  style="margin:0.625rem;font-family: Courier;font-size: 1.1rem;font-weight: thin" onclick="laullobet()">'+"lau.llobet"+"@"+""+""+""+"g"+"ma"+"il.com"+'</div>')
           document.write('</div>')
             var id = "10"
 
