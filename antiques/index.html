@@ -1,1 +1,35 @@
-hola
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DEMO</title>
+    <link rel="stylesheet" href="style.css">
+   <script>
+   var passwordField = document.querySelectorAll(".password");
+    function togglePassword() {
+        if (this.type === "password") {
+            this.type = "text";
+        } else {
+            this.type = "password";
+        }
+    }
+    passwordField.forEach((elem)=>{
+      elem.addEventListener("click", togglePassword);
+    })
+
+      function myFunction(){
+	
+		if( "972972" == document.getElementById("aa").value){
+			window.location.href = './demo.html';
+		}
+	}
+
+
+</script>
+  </head>
+  <body>
+Type password:
+    <input class ="password:" type="password" id="aa"/>
+    <button onclick="myFunction()">entrar a la demo</button>
+  </body>
+</html>
