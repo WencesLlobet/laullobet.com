@@ -1,20 +1,142 @@
+<head> 
+<script>
+var url = "https://render-table-718778053249.europe-west1.run.app/hola"
 
 
-<!DOCTYPE html>
+function HttpPost(nom, tel , time){
+    const xhr = new XMLHttpRequest();           
+  xhr.open("POST", "https://reserve-718778053249.europe-west1.run.app", true);
+  xhr.setRequestHeader('Content-Type', 'application/json')
+ 
 
-<html>
 
-<head>
+  // Send the proper header information along with the request
 
-    <script type="text/javascript">
+   xhr.onreadystatechange = () => {
+    // Call a function when the state changes.
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+      // Request finished. Do processing here.
+    }
+  };
+  xhr.send(JSON.stringify({'nom':nom,"tel":tel,"time": time}));
 
-var styles = `
+           }
+function httpGet(theUrl)
+{
+  
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+function reserva(input){
+  let person = prompt("Please enter your name", "");
+  let telephone;
+  if (person == null || person == "") {
+    text = "User cancelled the reservation process.";
+    alert(text)
+  } else {
+     telephone = prompt("Please enter your telephone, I'll contact you through whatsapp", "");
+    if (telephone == null || telephone == "") {
+      text = "You cancelled the reservation process.";
+    } else {
+      text = "You have reserved a class ! I'll contact you via whatsapp";
+     
+    }
+  }
+  HttpPost(person, telephone, input)
+ }
+setInterval(()=> {
+  if (document.hidden) {
+    return
+  }
+  document.getElementsByTagName("div")[0].innerHTML=JSON.parse(httpGet(url)).values
+           .reduce((accum, curr) =>
+                   {if(accum.week != curr[4]){ 
+                    
+                     accum.result.push(["___________________________________"])}
+                    if(accum.day != curr[5] && accum.week === curr[4] ){ 
+                    
+                     accum.result.push(["-------"])}  accum.week=curr[4];accum.day=curr[5]; curr.splice(4,1);accum.result.push(curr); return accum},{week: 0, day: 0 , result: []}).result.map(hora=> hora.reduce(( acc, curr)=> { if(curr.length <= 3){return  acc + "··" + curr.padEnd(4,"·")}; return acc + "··" + curr.padEnd(10,"·") }))
+           .reduce((accum, curr) => { 
+  if (curr.includes("RESERVA") && !curr.includes("attendee")){
+      return accum +  "<br/>" + curr.substring(0,curr.length-(6))
+      }
+    
+          if (curr.includes("RESERVA") && curr.includes("attendees")){
+      return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVA!","xMEETUP.");
+      }
+        if (curr.includes("RESERVA") && curr.includes("attendee")){
+      return accum +  "<br/>" + curr.substring(0,curr.length-(18)).replace("RESERVA!","CONSULTA")
+      }
+    
+  return accum + "<br/>" + curr.substring(0,34)
+}).replaceAll("··················","")
+    
+},6000)
 
-@media (max-width: 1000px) {
-    html {
-      font-size: 158.5%;
+
+
+
+</script>
+
+
+
+<style>
+
+
+
+
+
+
+
+@import url("https://db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas");
+
+body {
+  font-family: "Consolas";
+  background: white;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+ 
+}
+div {
+   line-height: 1.8;
+  text-align: center;
+}
+subraya {
+  font-family: "Consolas";
+  background: black;
+  color: white;
+  text-align: left;
+  font-weight: lighter;
+    line-height: 1.8
+}
+@media (min-width: 30px) and (max-width: 500em) {
+ div {
+      font-size:100%;
+  }    
+  
+  h1 {
+      font-size:150%;
   }
 
+}
+
+@media (min-width: 500px) and (max-width: 5000em) {
+ div {
+      font-size:200%;
+  }    
+  
+  h1 {
+      font-size:250%;
+  }
+
+}
+
+
+@media (max-width: 10000px) {
+   
   #boldmobile
   {
     font-weight: bold;
@@ -28,156 +150,100 @@ var styles = `
     margin: 0px !important;
   }
 }
+
 body {
     -moz-transform: scale(1); /* for Firefox, default 1*/
     zoom:100%; /* For Chrome, IE, default 100%*/
 }
 
-.container {
-  display: none;
-  overflow: visible;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-:not(:root):fullscreen::backdrop {
-    position: fixed;
-    inset: 0px;
-    background: #fff;
-}
 
 
-.container.fullscreen {
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  color: #fff;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-}
-.container .btn {
-  background: #fff;
-  color: #fff;
-  padding: 0.01rem 0.4rem;
-  border-radius: 0.3rem;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-
-#boxclose {
-  float: right;
-  cursor: pointer;
-  color: #fff;
-  background: #fff;
-  font-size: 31px;
-  font-weight: bold;
-  display: inline-block;
-  line-height: 0px;
-  padding: 11px 3px;
-  position: absolute;
-  right: 2px;
-  top: 2px;
-  z-index: 1002;
-  opacity: 0.9;
-}
-
-#fade:hover ~ #boxclose {
-  display:none;
-}
-
-.test:hover ~ .test2 {
-  display: none;
-}
 
 
-`
-window.document.onkeydown = function(e) {
-  if (!e) {
-    e = event;
-  }
-  if (e.keyCode == 27) {
-    exitFullscreen();
-  }
-}
-
-function lightbox_open() {
-  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  window.scrollTo(0, 0);
-  console.log(document.getElementById('video-container'))
-  document.getElementById('video-container').style.display = 'flex';
-  lightBoxVideo.play();
-  console.log("fullscreening")
-  console.log(document.getElementById('video-container').style)
-  launchIntoFullscreen(document.getElementById('video-container'));
-}
-
-function lightbox_close() {
-  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  lightBoxVideo.pause();
-}
-
-var styleSheet = document.createElement("style")
-styleSheet.innerText = styles
-document.head.appendChild(styleSheet)
 
 
-function setCookie(cname, cvalue) {
-    const exdays = 1000000;
-    const d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    let expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
 
-  function getCookie(cname) {
-    let name = cname + "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
 
-  function laullobet(){
-    // alert("close video")
-  }
+</style>
 
-    function myFunc(thisy)
-    {
-      var id= thisy.getAttribute("id")
-      var ps = getCookie("ps")    
-      if(ps){
-          ps = ps.split(",")
-          if(ps.includes(id)){
-              playvideo(id)
-              return
-          }
-        }
-        window.location.href = thisy.getAttribute("href")
-        
-    }
-
-    
-    
-
-</script>
 
 </head>
 
 
 
+
+
+<head>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js">
+    </script>
+</head>
+
 <body>
+
+  <h1>CLASES DE INGLÉS GRATUITAS EN UNA CAFETERÍA</h1>
+  <h2> <a href=#video>Video de una clase</a> // <a href=#quien> Quién soy </a></h2>
+  <div>
+    cargando calendario...
+    <pre>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </pre>
+</div>
+    <p>--</p>
+  <div id="video">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/A6XUVjK9W4o" frameborder="0" allowfullscreen></iframe>
+
+</iframe>
+      <p>--</p>
+  </div>
+  <div id="quien">
+    <br>QUIÉN SOY</br>
+    <p>Soy ex-informático de Barcelona, no soy de Oxford ni de Cambridge.
+  He trabajado en empresas de UK y USA, ahora doy clases de inglés</p>
+  <p>--</p>
+  
+    <P>VALORACIONES</P>
+  <P>"no esperaba que una clase de inglés fuera tan divertida"
+  </P>
+"se me ha pasado el tiempo volando"
+<P>
+  <p>--</p>
+<p>¿PORQUÉ GRATUITAS?</P>
+<P>No pagar nada es la manera de ayudarte a empezar de nuevo con el inglés y comprobar si el sistema conversacional te ayuda, con el tiempo ya hablamos de precios.<p>
+    
+  </div>
+ <pre>
+    
+
+     I wish we can have a great class in a cafeteria !
+    
+    
+    
+    
+    </pre>
 </body>
 
-</html>
+
+
+
+
+
+
 
