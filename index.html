@@ -50,7 +50,33 @@ function reserva(input){
     }
   }
  }
-
+  
+function calcHeight(){
+ 
+  var past;
+  var pastdiff=0
+  
+  
+       document.getElementsByTagName("div")[0].style.fontSize=(1+"px")
+       past = document.getElementsByTagName("div")[0].offsetHeight
+       document.getElementsByTagName("div")[0].style.fontSize=(2+"px")
+       var pastdiff = document.getElementsByTagName("div")[0].offsetHeight - past
+      
+  for (let i = 3; i < 400; i++) {
+    console.log(i)
+    
+       past = document.getElementsByTagName("div")[0].offsetHeight
+       document.getElementsByTagName("div")[0].style.fontSize=(i+"px")
+       var diff = document.getElementsByTagName("div")[0].offsetHeight - past
+      
+        console.log("i "+i+" diff "+diff +"past "+pastdiff)
+        if(pastdiff * 1.5 < diff){
+          document.getElementsByTagName("div")[0].style.fontSize=(i-1-(i/20))+"px"//((i-2)+"px")
+        return
+       }
+        pastdiff = diff
+   }
+}
 function loadTable(){
  {
   if (document.hidden) {
@@ -86,7 +112,7 @@ function loadTable(){
     
   return accum + "<br/>" + curr.substring(0,34)
 }).replaceAll("··················","") + "<br/>__________________________________"
-    
+    calcHeight()
 }
 }
 
