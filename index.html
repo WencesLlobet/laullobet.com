@@ -69,7 +69,7 @@ function loadTable(){
       }
      
       if (!curr.includes("RESERVA") && curr.includes("1 attendee")){
-      return accum +  "<br/>" + curr.substring(0,curr.length-(50-19)) + ".aConfirmar"
+      return accum +  "<br/>" + curr.substring(0,curr.length-(50-19)) + ".xConfirmar"
       }
     
     
@@ -77,7 +77,7 @@ function loadTable(){
       return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVA!","xMEETUP.");
       }
           if (!curr.includes("RESERVA") && curr.includes("attendees")){
-      return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "·aConfirmar"
+      return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "·xConfirmar"
       }
         if (curr.includes("RESERVA") && curr.includes("attendee")){
       return accum +  "<br/>" + curr.substring(0,curr.length-(18)).replace("RESERVA!","CONSULTA")
