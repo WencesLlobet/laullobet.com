@@ -62,7 +62,7 @@ function calcHeight(){
        document.getElementsByTagName("div")[0].style.fontSize=(13+"px")
        var pastdiff = document.getElementsByTagName("div")[0].offsetHeight - past
       
-  for (let i = 14; i < 400; i++) {
+  for (let i = 14; i < 400; i = i + 2 ) {
     console.log(i)
     
        past = document.getElementsByTagName("div")[0].offsetHeight
@@ -74,8 +74,8 @@ function calcHeight(){
         }
             
         console.log("i "+i+" diff "+diff +"past "+pastdiff)
-        if(pastdiff * 1.5 < diff){
-          document.getElementsByTagName("div")[0].style.fontSize=(i-1)+"px"//((i-2)+"px")
+        if(pastdiff * 4 < diff){
+          document.getElementsByTagName("div")[0].style.fontSize=(i-3)+"px"//((i-2)+"px")
         return
        }
         pastdiff = diff
