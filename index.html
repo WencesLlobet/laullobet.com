@@ -57,12 +57,12 @@ function calcHeight(){
   var pastdiff=0
   
   
-       document.getElementsByTagName("div")[0].style.fontSize=(1+"px")
+       document.getElementsByTagName("div")[0].style.fontSize=(4+"px")
        past = document.getElementsByTagName("div")[0].offsetHeight
-       document.getElementsByTagName("div")[0].style.fontSize=(2+"px")
+       document.getElementsByTagName("div")[0].style.fontSize=(5+"px")
        var pastdiff = document.getElementsByTagName("div")[0].offsetHeight - past
       
-  for (let i = 3; i < 400; i++) {
+  for (let i = 6; i < 400; i++) {
     console.log(i)
     
        past = document.getElementsByTagName("div")[0].offsetHeight
