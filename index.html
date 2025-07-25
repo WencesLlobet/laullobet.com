@@ -30,23 +30,28 @@ function httpGet(theUrl)
     return xmlHttp.responseText;
 }
 function reserva(input){
-  let person = prompt("Please enter your name", "");
+  let person = prompt("INTRODUCE TU NOMBRE", "");
   let telephone;
   if (person == null || person == "") {
-    text = "User cancelled the reservation process.";
+    text = "CANCELADO. Si prefieres reserva por email: l.de."+"llobet"+"@"+"gmail.com";
     alert(text)
   } else {
-     telephone = prompt("Please enter your telephone, I'll contact you through whatsapp", "");
+     telephone = prompt("INTRODUCE TU TELÉFONO, ASÍ CONFIRMAMOS", "");
     if (telephone == null || telephone == "") {
-      text = "You cancelled the reservation process.";
+      
+      var text
+      text = "CANCELADO. Si prefieres reserva por email: l.de."+"llobet"+"@"+"gmail.com";
+    alert(text)
     } else {
-      text = "You have reserved a class ! I'll contact you via whatsapp";
-     
+     HttpPost(person, telephone, input)
+     var text = "RESERVANDO...";
+    alert(text)
     }
   }
-  HttpPost(person, telephone, input)
  }
-setInterval(()=> {
+
+function loadTable(){
+ {
   if (document.hidden) {
     return
   }
@@ -62,18 +67,30 @@ setInterval(()=> {
   if (curr.includes("RESERVA") && !curr.includes("attendee")){
       return accum +  "<br/>" + curr.substring(0,curr.length-(6))
       }
+     
+      if (!curr.includes("RESERVA") && curr.includes("1 attendee")){
+      return accum +  "<br/>" + curr.substring(0,curr.length-(50-19)) + ".aConfirmar"
+      }
+    
     
           if (curr.includes("RESERVA") && curr.includes("attendees")){
       return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVA!","xMEETUP.");
+      }
+          if (!curr.includes("RESERVA") && curr.includes("attendees")){
+      return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "·aConfirmar"
       }
         if (curr.includes("RESERVA") && curr.includes("attendee")){
       return accum +  "<br/>" + curr.substring(0,curr.length-(18)).replace("RESERVA!","CONSULTA")
       }
     
   return accum + "<br/>" + curr.substring(0,34)
-}).replaceAll("··················","")
+}).replaceAll("··················","") + "<br/>__________________________________"
     
-},6000)
+}
+}
+
+setTimeout(loadTable,600)
+setInterval(loadTable,6000)
 
 
 
@@ -112,7 +129,7 @@ subraya {
   font-weight: lighter;
     line-height: 1.8
 }
-@media (min-width: 30px) and (max-width: 500em) {
+@media (min-width: 300px) and (max-width: 560px) {
  div {
       font-size:100%;
   }    
@@ -120,10 +137,18 @@ subraya {
   h1 {
       font-size:150%;
   }
+  body {
+    margin: 10px !important;
+  }
+
+   iframe {
+       width: 300;
+       height: 158;
+    }
 
 }
 
-@media (min-width: 500px) and (max-width: 5000em) {
+@media (min-width: 560px) and (max-width: 5000px) {
  div {
       font-size:200%;
   }    
@@ -131,7 +156,13 @@ subraya {
   h1 {
       font-size:250%;
   }
-
+  body {
+    margin: 25px !important;
+  }
+   iframe {
+       width: 560;
+       height: 315;
+    }
 }
 
 
@@ -143,7 +174,7 @@ subraya {
   }
 
   body {
-    margin: 4px !important;
+    margin: 25px !important;
   }
 
   div {
@@ -182,7 +213,9 @@ body {
 <body>
 
   <h1>CLASES DE INGLÉS GRATUITAS EN UNA CAFETERÍA</h1>
+ <h2>en Pl.Tetuan, Bcn</h2>
   <h2> <a href=#video>Video de una clase</a> // <a href=#quien> Quién soy </a></h2>
+ 
   <div>
     cargando calendario...
     <pre>
@@ -193,6 +226,70 @@ body {
     
     
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     
     
@@ -206,17 +303,23 @@ body {
     
     </pre>
 </div>
-    <p>--</p>
-  <div id="video">
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/A6XUVjK9W4o" frameborder="0" allowfullscreen></iframe>
 
-</iframe>
-      <p>--</p>
+<div>
+    <pre>
+
+</div>
+
+</pre>
+  <div id="video">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/XIMLoLxmTDw?si=Ay1LvwpgR8rlRaII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <pre>
+
+--</pre>
   </div>
   <div id="quien">
-    <br>QUIÉN SOY</br>
-    <p>Soy ex-informático de Barcelona, no soy de Oxford ni de Cambridge.
-  He trabajado en empresas de UK y USA, ahora doy clases de inglés</p>
+    QUIÉN SOY</br>
+    <p>Soy ex-informático de Barcelona, no soy ni de Oxford ni de Cambridge.
+  He trabajado en empresas de UK y USA. Ahora doy clases de inglés.</p>
   <p>--</p>
   
     <P>VALORACIONES</P>
@@ -226,18 +329,14 @@ body {
 <P>
   <p>--</p>
 <p>¿PORQUÉ GRATUITAS?</P>
-<P>No pagar nada es la manera de ayudarte a empezar de nuevo con el inglés y comprobar si el sistema conversacional te ayuda, con el tiempo ya hablamos de precios.<p>
+<P>No pagar nada es la manera de ayudarte a empezar de nuevo con el inglés. Así puedes comprobar si aprender con mi ayuda te ayuda. Con el tiempo ya hablaremos de precios.<p>
     
   </div>
- <pre>
-    
 
-     I wish we can have a great class in a cafeteria !
     
+   <div> <p>--</p>
     
-    
-    
-    </pre>
+Por último, intenta ser puntual, es de agradecer.</div>
 </body>
 
 
