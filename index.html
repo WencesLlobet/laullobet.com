@@ -68,7 +68,11 @@ function calcHeight(){
        past = document.getElementsByTagName("div")[0].offsetHeight
        document.getElementsByTagName("div")[0].style.fontSize=(i+"px")
        var diff = document.getElementsByTagName("div")[0].offsetHeight - past
-      
+
+        if(diff == 0 ){
+            diff = pastdiff
+        }
+            
         console.log("i "+i+" diff "+diff +"past "+pastdiff)
         if(pastdiff * 1.5 < diff){
           document.getElementsByTagName("div")[0].style.fontSize=(i-1-(i/20))+"px"//((i-2)+"px")
