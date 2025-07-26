@@ -409,13 +409,9 @@ function loadTable(){
     
   return accum + "<br/>" + curr.substring(0,34)
 }).replaceAll("··················","") + "<br/>__________________________________"
-    document.getElementsByTagName("testing")[0].innerHTML=  document.getElementsByTagName("div")[1].innerHTML
-    calcHeight()
-    document.getElementsByTagName("testing")[0].innerHTML=""
-    
 }
 }
-        window.onload = loadTable
+        window.onload = () => { loadTable(); calcHeight(); document.getElementsByTagName("testing")[0].innerHTML="" }
 setInterval(loadTable,6000)
 
 
