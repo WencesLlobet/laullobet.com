@@ -388,13 +388,20 @@ function calcHeight(){
         pastdiff = diff
    }
 }
+
+function daysIntoYear(date){
+    return (Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) - Date.UTC(date.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000;
+}
+
+
+      
 function loadTable(){
  {
   if (document.hidden) {
     return
   }
   document.getElementsByTagName("div")[1].innerHTML=JSON.parse(httpGet(url)).values
-     .filter((fila) => 217 > fila[5] )
+     .filter((fila) => daysIntoYear(Date.now()) < fila[5] )
            .reduce((accum, curr) =>
                    {if(accum.week != curr[4]){ 
                     
