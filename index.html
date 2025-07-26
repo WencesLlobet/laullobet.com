@@ -79,7 +79,7 @@ function calcHeight(){
             ([].slice.call(document.getElementsByTagName("p"))).map( seccio=> seccio.style.fontSize=(i-3)+"px")
       
           document.getElementsByTagName("testing")[0].style.fontSize=(i-3)+"px"//((i-2)+"px")
-       document.getElementsByTagName("div")[0].innerHTML=  document.getElementsByTagName("testing")[0].innerHTML
+       document.getElementsByTagName("div")[1].innerHTML=  document.getElementsByTagName("testing")[0].innerHTML
            return
        }
         pastdiff = diff
@@ -207,11 +207,12 @@ body {
 </head>
 
 <body>
-
+<div>
   <p>CLASES DE INGLÉS GRATUITAS EN UNA CAFETERÍA</p>
  <p>en Pl.Tetuan, Bcn</p>
   <p> <a href=#video>Video de una clase</a> // <a href=#quien> Quién soy </a></p>
  <pre>
+    <div/>
   <div>
     cargando calendario...
     <pre>
@@ -332,7 +333,7 @@ body {
     
    <div> <p>--</p>
     
-Por último, intenta ser puntual, es de agradecer.</div>
+Por último, intenta ser puntual, es de agradecer.
 <pre>
 
 
@@ -363,6 +364,6 @@ Por último, intenta ser puntual, es de agradecer.</div>
 
 
 
-
+</pre></div>
    <testing></testing>
-</pre></body>
+</body>
