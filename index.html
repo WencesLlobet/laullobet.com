@@ -90,7 +90,7 @@ function loadTable(){
   if (document.hidden) {
     return
   }
-  document.getElementsByTagName("div")[0].innerHTML=JSON.parse(httpGet(url)).values
+  document.getElementsByTagName("div")[1].innerHTML=JSON.parse(httpGet(url)).values
            .reduce((accum, curr) =>
                    {if(accum.week != curr[4]){ 
                     
@@ -120,7 +120,7 @@ function loadTable(){
     
   return accum + "<br/>" + curr.substring(0,34)
 }).replaceAll("··················","") + "<br/>__________________________________"
-    document.getElementsByTagName("testing")[0].innerHTML=  document.getElementsByTagName("div")[0].innerHTML
+    document.getElementsByTagName("testing")[0].innerHTML=  document.getElementsByTagName("div")[1].innerHTML
     calcHeight()
     
 }
