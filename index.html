@@ -367,7 +367,7 @@ function calcHeight(){
        document.getElementsByTagName("testing")[0].style.fontSize=(4+"px")
        var pastdiff = document.getElementsByTagName("testing")[0].offsetHeight - past
       
-  for (let i = 6; i < 200; i = i + 2 ) {
+  for (let i = 6; i < 80; i = i + 2 ) {
     console.log(i)
     
        past = document.getElementsByTagName("testing")[0].offsetHeight
@@ -394,7 +394,7 @@ function loadTable(){
     return
   }
   document.getElementsByTagName("div")[1].innerHTML=JSON.parse(httpGet(url)).values
-     .filter((fila) => 217 > curr[5] )
+     .filter((fila) => 217 > fila[5] )
            .reduce((accum, curr) =>
                    {if(accum.week != curr[4]){ 
                     
