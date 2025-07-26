@@ -401,7 +401,7 @@ function loadTable(){
     return
   }
   document.getElementsByTagName("div")[1].innerHTML=JSON.parse(httpGet(url)).values
-     .filter((fila) => daysIntoYear(Date()) < fila[5] )
+     .filter((fila) => daysIntoYear(new Date()) < fila[5] )
            .reduce((accum, curr) =>
                    {if(accum.week != curr[4]){ 
                     
