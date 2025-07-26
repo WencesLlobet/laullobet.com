@@ -195,7 +195,7 @@ body {
    <div> <p>--</p>
     
 Por último, intenta ser puntual, es de agradecer.
-<pre>
+<testing-box><pre>
 
 
 
@@ -286,8 +286,25 @@ Por último, intenta ser puntual, es de agradecer.
 
 
 
-</pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
    <testing></testing>
+</pre></testing-box>testing-box></testing-box></div>
    <script>
 var url = "https://render-table-718778053249.europe-west1.run.app/hola"
 
@@ -411,7 +428,7 @@ function loadTable(){
 }).replaceAll("··················","") + "<br/>__________________________________"
 }
 }
-        window.onload = () => { loadTable(); calcHeight(); document.getElementsByTagName("testing")[0].innerHTML="" }
+        window.onload = () => { loadTable(); calcHeight(); setTimeout(() => {document.getElementsByTagName("testing-box")[0].innerHTML="" }, 600) }
 setInterval(loadTable,6000)
 
 
