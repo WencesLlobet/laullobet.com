@@ -304,7 +304,7 @@ Por último, intenta ser puntual, es de agradecer.
    
 
    <testing></testing>
-</pre></testing-box>testing-box></testing-box></div>
+</pre></testing-box></div>
    <script>
 var url = "https://render-table-718778053249.europe-west1.run.app/hola"
 
@@ -428,7 +428,7 @@ function loadTable(){
 }).replaceAll("··················","") + "<br/>__________________________________"
 }
 }
-        window.onload = () => { loadTable(); calcHeight(); setTimeout(() => {document.getElementsByTagName("testing-box")[0].innerHTML="" }, 600) }
+        window.onload = () => { loadTable(); calcHeight(); setTimeout(() => {document.getElementsByTagName("testing-box")[0].innerHTML="" ; console.log("adapted")}, 600) }
 setInterval(loadTable,6000)
 
 
