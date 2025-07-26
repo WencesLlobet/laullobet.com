@@ -411,7 +411,7 @@ function loadTable(){
       }
      
       if (!curr.includes("RESERVALA") && curr.includes("1 attendee")){
-      return accum +  "<br/>" + curr.substring(0,curr.length-(50-18+1)) + "·xConfirmar"
+      return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "·····xConfirmar"
       }
     
     
@@ -419,7 +419,7 @@ function loadTable(){
       return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","···xMEETUP");
       }
           if (!curr.includes("RESERVALA") && curr.includes("attendees")){
-      return accum +  "<br/>" + curr.substring(0,curr.length-(50-18+1)) + "··············"
+      return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "···············"
       }
         if (curr.includes("RESERVALA") && curr.includes("attendee")){
            
