@@ -382,14 +382,11 @@ function calcHeight(){
         if(pastdiff * 4 < diff || i > 60){
             ([].slice.call(document.getElementsByTagName("div"))).map(seccio => seccio.style.fontSize=(i-4)+"px");
             ([].slice.call(document.getElementsByTagName("p"))).map( seccio=> seccio.style.fontSize=(i-4)+"px");
-      
-           document.getElementsByTagName("div")[1].innerHTML=  document.getElementsByTagName("testing")[0].innerHTML
-           document.getElementsByTagName("testing")[0].innerHTML=""
+   
            return
        }
         pastdiff = diff
    }
-      document.getElementsByTagName("testing")[0].innerHTML=""
 }
 function loadTable(){
  {
