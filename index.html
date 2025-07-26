@@ -422,7 +422,7 @@ function loadTable(){
       return accum +  "<br/>" + curr.substring(0,curr.length-(50-18+1)) + "···········"
       }
         if (curr.includes("RESERVALA") && curr.includes("attendee")){
-      return accum +  "<br/>" + curr.replace("RESERVALA!","RESERVALA*")
+      return accum +  "<br/>" + curr.substring(0,curr.length-(6)).replace("RESERVALA!","RESERVALA ")
       }
     
   return accum + "<br/>" + curr.substring(0,curr.length-(50-19+1))
