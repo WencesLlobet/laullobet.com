@@ -123,6 +123,7 @@ function loadTable(){
 }).replaceAll("··················","") + "<br/>__________________________________"
     document.getElementsByTagName("testing")[0].innerHTML=  document.getElementsByTagName("div")[1].innerHTML
     calcHeight()
+    document.getElementsByTagName("testing")[0].innerHTML=""
     
 }
 }
@@ -154,12 +155,10 @@ body {
    
 div {
    line-height: 2;
-  text-align: center;
 }
 subraya {
   background: black;
   color: white;
-  text-align: left;
   font-weight: lighter;
     line-height: 2;
 }
