@@ -397,7 +397,7 @@ function loadTable(){
            .reduce((accum, curr) =>
                    {if(accum.week != curr[4]){ 
                     
-                     accum.result.push(["_______________________________________"])}
+                     accum.result.push(["____________________________________"])}
                     if(accum.day != curr[5] && accum.week === curr[4] ){ 
                     
                      accum.result.push(["--------"])}  accum.week=curr[4];accum.day=curr[5]; curr.splice(4,1);accum.result.push(curr); return accum},{week: 0, day: 0 , result: []})
@@ -411,7 +411,7 @@ function loadTable(){
       }
      
       if (!curr.includes("RESERVALA") && curr.includes("1 attendee")){
-      return accum +  "<br/>" + curr.substring(0,curr.length-(50-19+1)) + "···xConfirmar"
+      return accum +  "<br/>" + curr.substring(0,curr.length-(50-18+1)) + "·xConfirmar"
       }
     
     
@@ -427,8 +427,8 @@ function loadTable(){
       //return accum +  "<br/>" + curr.substring(0,curr.length-(6)).replace("RESERVALA!","RESERVALA ")
       }
     
-  return accum +  "<br/>" + curr.substring(0,39)
-}).replaceAll("··················","") + "<br/>_______________________________________"
+  return accum +  "<br/>" + curr.substring(0,36)
+}).replaceAll("<br/>··················","") + "<br/>____________________________________"
 }
 }
       
