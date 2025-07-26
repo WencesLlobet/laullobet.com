@@ -436,7 +436,8 @@ setTimeout(() => {document.getElementsByTagName("testing")[0].innerHTML=document
                  },750)
 setTimeout(calcHeight, 800)
 setTimeout(() => {
-   document.getElementsByTagName("div")[1].innerHTML=document.getElementsByTagName("testing")[0].innerHTML
+   document.getElementsByTagName("div")[1].innerHTML=document.getElementsByTagName("testing")[0].innerHTML;
+   console.log(document.getElementsByTagName("div")[1].innerHTML)
    document.getElementsByTagName("testing-box")[0].innerHTML="" }, 1200)
            
 
