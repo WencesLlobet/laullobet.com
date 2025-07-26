@@ -31,7 +31,7 @@ subraya {
 
 @media (min-width: 0px) and (max-width: 50000px) {
  div {
-      font-size:1.9em;
+      font-size:10px;
   }    
    
    iframe {
@@ -367,7 +367,7 @@ function calcHeight(){
        document.getElementsByTagName("testing")[0].style.fontSize=(4+"px")
        var pastdiff = document.getElementsByTagName("testing")[0].offsetHeight - past
       
-  for (let i = 6; i < 40; i = i + 2 ) {
+  for (let i = 6; i < 60; i = i + 2 ) {
     console.log(i)
     
        past = document.getElementsByTagName("testing")[0].offsetHeight
@@ -379,7 +379,7 @@ function calcHeight(){
         }
             
         console.log("i "+i+" diff "+diff +"past "+pastdiff)
-        if(pastdiff * 4 < diff || i > 60){
+        if(pastdiff * 4 < diff || i > 40){
             ([].slice.call(document.getElementsByTagName("div"))).map(seccio => seccio.style.fontSize=(i-5)+"px");
             ([].slice.call(document.getElementsByTagName("p"))).map( seccio=> seccio.style.fontSize=(i-5)+"px");
    
