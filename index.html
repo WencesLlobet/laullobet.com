@@ -57,17 +57,17 @@ function calcHeight(){
   var pastdiff=0
   
   
-       document.getElementsByTagName("div")[0].style.fontSize=(12+"px")
-       past = document.getElementsByTagName("div")[0].offsetHeight
-       document.getElementsByTagName("div")[0].style.fontSize=(13+"px")
-       var pastdiff = document.getElementsByTagName("div")[0].offsetHeight - past
+       document.getElementsByTagName("testing")[0].style.fontSize=(12+"px")
+       past = document.getElementsByTagName("testing")[0].offsetHeight
+       document.getElementsByTagName("testing")[0].style.fontSize=(13+"px")
+       var pastdiff = document.getElementsByTagName("testing")[0].offsetHeight - past
       
   for (let i = 14; i < 400; i = i + 2 ) {
     console.log(i)
     
-       past = document.getElementsByTagName("div")[0].offsetHeight
-       document.getElementsByTagName("div")[0].style.fontSize=(i+"px")
-       var diff = document.getElementsByTagName("div")[0].offsetHeight - past
+       past = document.getElementsByTagName("testing")[0].offsetHeight
+       document.getElementsByTagName("testing")[0].style.fontSize=(i+"px")
+       var diff = document.getElementsByTagName("testing")[0].offsetHeight - past
 
         if(diff < 1 ){
             diff = pastdiff
@@ -116,7 +116,9 @@ function loadTable(){
     
   return accum + "<br/>" + curr.substring(0,34)
 }).replaceAll("··················","") + "<br/>__________________________________"
+    document.getElementsByTagName("testing")[0].innerHTML=  document.getElementsByTagName("div")[0].innerHTML
     calcHeight()
+    
 }
 }
 
@@ -335,4 +337,36 @@ body {
    <div> <p>--</p>
     
 Por último, intenta ser puntual, es de agradecer.</div>
-</body>
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <testing></testing>
+</pre></body>
