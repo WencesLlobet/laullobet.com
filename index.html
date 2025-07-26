@@ -88,7 +88,6 @@ function loadTable(){
   if (document.hidden) {
     return
   }
-     document.getElementsByTagName("testing")[0].style.fontSize=(i-3)+"px"
   document.getElementsByTagName("div")[0].innerHTML=JSON.parse(httpGet(url)).values
            .reduce((accum, curr) =>
                    {if(accum.week != curr[4]){ 
