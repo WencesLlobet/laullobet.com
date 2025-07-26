@@ -421,11 +421,11 @@ function loadTable(){
           if (!curr.includes("RESERVALA") && curr.includes("attendees")){
       return accum +  "<br/>" + curr.substring(0,curr.length-(50-18+1)) + "···········"
       }
-        if (curr.includes("RESERVALA") && curr.includes("1 attendee")){
+        if (curr.includes("RESERVALA") && curr.includes("attendee")){
       return accum +  "<br/>" + curr.substring(0,curr.length-(18+2)).replace("RESERVALA!","RESERVALA*")
       }
     
-  return accum + "<br/>" + curr.substring(0,36)
+  return accum + "<br/>" + curr.substring(0,34)
 }).replaceAll("··················","") + "<br/>_______________________________________"
 }
 }
