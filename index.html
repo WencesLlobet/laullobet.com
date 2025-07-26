@@ -71,8 +71,6 @@ body {
  <p>en Barcelona</p>
   <p> <a href=#video>Video de una clase</a> // <a href=#quien> Quién soy </a></p>
  <pre>
-
-
     <div/>
   <div>
    cargando
@@ -402,19 +400,19 @@ function loadTable(){
                      accum.result.push(["____________________________________"])}
                     if(accum.day != curr[5] && accum.week === curr[4] ){ 
                     
-                     accum.result.push(["--------"])}  accum.week=curr[4];accum.day=curr[5]; curr.splice(4,1);accum.result.push(curr); return accum},{week: 0, day: 0 , result: []}).result.map(hora=> hora.reduce(( acc, curr)=> { if(curr.length <= 3){return  acc + "··" + curr.padEnd(4,"·")}; return acc + "··" + curr.padStart(12,"·") }))
+                     accum.result.push(["--------"])}  accum.week=curr[4];accum.day=curr[5]; curr.splice(4,1);accum.result.push(curr); return accum},{week: 0, day: 0 , result: []}).result.map(hora=> hora.reduce(( acc, curr)=> { if(curr.length <= 3){return  acc + "··" + curr.padEnd(4,"·")}; return acc + "··" + curr.padEnd(12,"·") }))
            .reduce((accum, curr) => { 
   if (curr.includes("RESERVALA") && !curr.includes("attendee")){
       return accum +  "<br/>" + curr.substring(0,curr.length-(6))
       }
      
       if (!curr.includes("RESERVALA") && curr.includes("1 attendee")){
-      return accum +  "<br/>" + curr.substring(0,curr.length-(50-19)) + "...xConfirmar"
+      return accum +  "<br/>" + curr.substring(0,curr.length-(50-19)) + "xConfirmar"
       }
     
     
           if (curr.includes("RESERVALA") && curr.includes("attendees")){
-      return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","....xMEETUP.");
+      return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","·xMEETUP");
       }
           if (!curr.includes("RESERVALA") && curr.includes("attendees")){
       return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "·..xConfirmar"
