@@ -92,7 +92,7 @@ function loadTable(){
            .reduce((accum, curr) =>
                    {if(accum.week != curr[4]){ 
                     
-                     accum.result.push(["___________________________________"])}
+                     accum.result.push(["__________________________________"])}
                     if(accum.day != curr[5] && accum.week === curr[4] ){ 
                     
                      accum.result.push(["-------"])}  accum.week=curr[4];accum.day=curr[5]; curr.splice(4,1);accum.result.push(curr); return accum},{week: 0, day: 0 , result: []}).result.map(hora=> hora.reduce(( acc, curr)=> { if(curr.length <= 3){return  acc + "··" + curr.padEnd(4,"·")}; return acc + "··" + curr.padEnd(10,"·") }))
@@ -144,7 +144,6 @@ body {
   font-family: "Consolas";
   background: white;
   color: black;
-  text-align: center;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -167,13 +166,6 @@ subraya {
  div {
       font-size:1.9em;
   }    
-  
-  h1 {
-      font-size:2.9em;
-  }
-  h2 {
-      font-size:2em;
-  }
   body {
   }
    iframe {
@@ -214,9 +206,9 @@ body {
 
 <body>
 
-  <h1>CLASES DE INGLÉS GRATUITAS EN UNA CAFETERÍA</h1>
- <h2>en Pl.Tetuan, Bcn</h2>
-  <h2> <a href=#video>Video de una clase</a> // <a href=#quien> Quién soy </a></h2>
+  <p>CLASES DE INGLÉS GRATUITAS EN UNA CAFETERÍA</p>
+ <p>en Pl.Tetuan, Bcn</p>
+  <p> <a href=#video>Video de una clase</a> // <a href=#quien> Quién soy </a></p>
  <pre>
   <div>
     cargando calendario...
