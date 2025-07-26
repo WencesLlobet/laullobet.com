@@ -397,7 +397,7 @@ function loadTable(){
            .reduce((accum, curr) =>
                    {if(accum.week != curr[4]){ 
                     
-                     accum.result.push(["____________________________________"])}
+                     accum.result.push(["_____________________________________"])}
                     if(accum.day != curr[5] && accum.week === curr[4] ){ 
                     
                      accum.result.push(["--------"])}  accum.week=curr[4];accum.day=curr[5]; curr.splice(4,1);accum.result.push(curr); return accum},{week: 0, day: 0 , result: []}).result.map(hora=> hora.reduce(( acc, curr)=> { if(curr.length <= 3){return  acc + "··" + curr.padEnd(4,"·")}; return acc + "··" + curr.padEnd(12,"·") }))
@@ -412,17 +412,17 @@ function loadTable(){
     
     
           if (curr.includes("RESERVALA") && curr.includes("attendees")){
-      return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","·xMEETUP");
+      return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","··xMEETUP");
       }
           if (!curr.includes("RESERVALA") && curr.includes("attendees")){
-      return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "·..xConfirmar"
+      return accum +  "<br/>" + curr.substring(0,curr.length-(50-18+1)) + "···xConfirmar"
       }
         if (curr.includes("RESERVALA") && curr.includes("attendee")){
       return accum +  "<br/>" + curr.substring(0,curr.length-(18+2)).replace("RESERVALA!","RESERVALA*")
       }
     
   return accum + "<br/>" + curr.substring(0,34)
-}).replaceAll("··················","") + "<br/>____________________________________"
+}).replaceAll("··················","") + "<br/>_____________________________________"
 }
 }
       
