@@ -394,6 +394,7 @@ function loadTable(){
     return
   }
   document.getElementsByTagName("div")[1].innerHTML=JSON.parse(httpGet(url)).values
+     .filter((fila) => 217 > curr[5] )
            .reduce((accum, curr) =>
                    {if(accum.week != curr[4]){ 
                     
@@ -415,7 +416,7 @@ function loadTable(){
       }
    
       if (curr.includes("RESERVALA") && curr.includes("attendees")){
-            return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","···xMEETUP");
+            return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","xMEETUP···");
       }
       if (!curr.includes("RESERVALA") && curr.includes("attendees")){
             return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "···············"
