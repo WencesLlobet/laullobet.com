@@ -426,7 +426,7 @@ function loadTable(){
             return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","RESxMeetup");
       }
       if (!curr.includes("RESERVALA") && curr.includes("attendees")){
-            return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "···············"
+            return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "·············"
       }
       if (curr.includes("RESERVALA") && curr.includes("attendee")){     
            return accum +  "<br/>" + curr.substring(0,curr.length-(6+12)).replace("RESERVALA!","RESERVALA ")
