@@ -427,7 +427,7 @@ function loadTable(callback){
             return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "·············"
       }
       if (curr.includes("RESERVALA") && curr.includes("1 attendee")){     
-           return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","meetup.com");
+            return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "····meetup.com";
       }
   return accum +  "<br/>" + curr.substring(0,36)
 }).replaceAll("<br/>··················","") + "<br/>____________________________________"
