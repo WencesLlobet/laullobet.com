@@ -412,7 +412,7 @@ function loadTable(callback){
                                                     return acc + "··" + curr.padEnd(10,"·") })
                 )
            .reduce((accum, curr) => { 
-     if (curr.includes("RESERVALA") && !curr.includes("attendee")){
+      if (curr.includes("RESERVALA") && !curr.includes("attendee")){
          return accum +  "<br/>" + curr.substring(0,curr.length-(6))
       }
      
@@ -421,15 +421,14 @@ function loadTable(callback){
       }
    
       if (curr.includes("RESERVALA") && curr.includes("attendees")){
-            return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","RESxMeetup");
+            return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","RSRVDAxMtp");
       }
       if (!curr.includes("RESERVALA") && curr.includes("attendees")){
             return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "·············"
       }
-      if (curr.includes("RESERVALA") && curr.includes("attendee")){     
-           return accum +  "<br/>" + curr.substring(0,curr.length-(6+12)).replace("RESERVALA!","RESERVALA_")
+      if (curr.includes("RESERVALA") && curr.includes("1 attendee")){     
+           return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","meetup.com");
       }
-    
   return accum +  "<br/>" + curr.substring(0,36)
 }).replaceAll("<br/>··················","") + "<br/>____________________________________"
 }
