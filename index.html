@@ -6,11 +6,13 @@
 <style>
    
 
-
-
+   @font-face {
+  font-family: type;
+  src: url(type.ttf);
+   }
 
 body {
-  font-family: "Consolas";
+  font-family: "type";
   background: white;
   color: black;
   -webkit-text-size-adjust: 100%;
@@ -59,14 +61,13 @@ body {
 
 
 <head>
-    <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js">
+    <script src="./moment.min.js">
     </script>
 </head>
 
 <body>
 <div>
-    <div/>
+</div>
   <div>
    cargando
    calendario
@@ -159,38 +160,39 @@ body {
  </pre>
 <div>
     <pre>
-
-</div>
-
 </pre>
   <div id="video">
-   <!--iframe width="560" height="315" src="https://www.youtube.com/embed/XIMLoLxmTDw?si=Ay1LvwpgR8rlRaII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe-->
-      <pre>
+    VÍDEO</br></br>
+    A. soportó ser filmado (jamás se hace)</br>
+    Muchas gracias por su valentía</br></br>
 
---</pre>
-  </div>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/XIMLoLxmTDw?si=Ay1LvwpgR8rlRaII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <pre>
+</pre>
+--
   <div id="quien">
     QUIÉN SOY</br>
     <p>Soy ex-informático de Barcelona, no soy ni de Oxford ni de Cambridge.
   He trabajado en empresas de UK y USA. Ahora doy clases de inglés.</p>
   <p>--</p>
   
-    <P id="opiniones">OPINIONES</P>
-  <P>"no esperaba que una clase de inglés fuera tan divertida"
+    <p id="opiniones">OPINIONES</P>
+  <P>"no esperaba que la clase de inglés fuera tan divertida"
   </P>
 "se me ha pasado el tiempo volando"
 <P>
   <p>--</p>
-<p>¿PORQUÉ GRATUITAS?</P>
-<P>No pagar nada es la manera de ayudarte a empezar de nuevo con el inglés. Así puedes comprobar si aprender con mi ayuda te ayuda. Dependiendo del horario, si hay grupos disponibles fijaremos un precio a partir de la segunda clase. La primera es gratuita y la segunda puede serlo también.<p>
+<p>¿POR QUÉ GRATUITAS?</P>
+<P>No pagar nada es la manera de ayudarte a empezar de nuevo con el inglés. Así puedes comprobar si aprender con mi ayuda te sirve. Dependiendo del horario, si hay grupos disponibles fijaremos un precio a partir de la segunda clase. La primera es gratuita y la segunda puede serlo también.<p>
     
-  </div>
+ 
 
     
    <div> <p>--</p>
     
 Por último, intenta ser puntual, es de agradecer.
-<testing-box><pre>
+ </div>
+    <testing-box><pre>
 
 
 
@@ -390,12 +392,12 @@ function daysIntoYear(date){
 
 
       
-function loadTable(){
+function loadTable(callback){
  {
   if (document.hidden) {
     return
   }
-  document.getElementsByTagName("div")[1].innerHTML=JSON.parse(httpGet(url)).values
+  var render = JSON.parse(httpGet(url)).values
      .filter((fila) => daysIntoYear(new Date()) < fila[5] )
            .reduce((accum, curr) =>
                    {if(accum.week != curr[4]){ 
@@ -430,31 +432,22 @@ function loadTable(){
   return accum +  "<br/>" + curr.substring(0,36)
 }).replaceAll("<br/>··················","") + "<br/>____________________________________"
 }
+callback(render)
 }
+var step = 1;
       
-      
-setTimeout(loadTable, 300)
-      
-setInterval(loadTable, 2000)
-setTimeout(() => {document.getElementsByTagName("testing")[0].innerHTML=document.getElementsByTagName("div")[1].innerHTML ;
-                  document.getElementsByTagName("div")[1].innerHTML="";
-            
-                 document.getElementsByTagName("div")[0].innerHTML="hi"
-                  
-      
-                      
-                  /*//////'<p>CLASES DE INGLÉS INDIVIDUALES GRATUITAS EN UNA CAFETERÍA</p> <p>en Barcelona</p> <p> <a href=#video>Video de una clase</a> // <a href=#quien> Quién soy </a> // <a href=#opiniones> Opiniones </a></p> <p> NOTA: Los horarios de Agosto no seran los mismos que en septiembre. </p>'
-*/
-                 },750)
-setTimeout(calcHeight, 800)
-setTimeout(() => {
-   document.getElementsByTagName("div")[1].innerHTML=document.getElementsByTagName("testing")[0].innerHTML;
-   console.log(document.getElementsByTagName("div")[1].innerHTML)
-   document.getElementsByTagName("testing-box")[0].innerHTML="" }, 1000)
-           
+window.onload = function(){
+    document.getElementsByTagName("div")[1].innerHTML="";
+    document.getElementsByTagName("div")[0].innerHTML="Loading the webpage..."
+    loadTable( (render)=> {
+        document.getElementsByTagName("testing")[0].innerHTML=render
+        calcHeight()
+        document.getElementsByTagName("div")[1].innerHTML=document.getElementsByTagName("testing")[0].innerHTML;
+        document.getElementsByTagName("testing-box")[0].innerHTML="" 
+        document.getElementsByTagName("div")[0].innerHTML="<p>CLASES DE INGLÉS INDIVIDUALES GRATUITAS EN UNA CAFETERÍA</p> <p>en Barcelona</p> <p> <a href=#video>Vídeo de una clase</a> // <a href=#quien> Quién soy </a> // <a href=#opiniones> Opiniones </a></p> <p> NOTA: Los horarios de Agosto no serán los mismos que en septiembre. </p>"
+    })
 
-
-
+}
 
 </script>
 
