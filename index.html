@@ -421,14 +421,14 @@ function loadTable(callback){
       }
    
       if (curr.includes("RESERVALA") && curr.includes("attendees")){
-            return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","Rsv.viaMTP");
+            return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","Rsv.porMTP");
       }
       if (!curr.includes("RESERVALA") && curr.includes("attendees")){
             return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "·············"
       }
       if (curr.includes("RESERVALA") && curr.includes("1 attendee")){     
             var curr2 = curr.substring(0,curr.length-(50-18)).replace(/<[^>]*>/g, "")
-            return accum +  "<br/>" + curr2.substring(0,curr2.length-10) + "·····viaMeetup";
+            return accum +  "<br/>" + curr2.substring(0,curr2.length-10) + "···dispXMeetup";
       }
       }
   return accum +  "<br/>" + curr.substring(0,36)
