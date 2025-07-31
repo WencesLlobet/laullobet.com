@@ -421,15 +421,15 @@ function loadTable(callback){
             return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "····xConfirmar"
       }
    
-      if (curr.includes("RESERVALA") && curr.includes("attendees")){
-            return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","Rsv.porMTP");
+      if (curr.includes("RESERVALA") && curr.includes("attendees")){                                                            
+            return accum +  "<br/>" + curr.substring(0,curr.length-(19)).replace(/<[^>]*>/g, "").replace("RESERVALA!","·Reservada");
       }
       if (!curr.includes("RESERVALA") && curr.includes("attendees")){
             return accum +  "<br/>" + curr.substring(0,curr.length-(50-18)) + "·············"
       }
       if (curr.includes("RESERVALA") && curr.includes("1 attendee")){     
-            var curr2 = curr.substring(0,curr.length-(50-18)).replace(/<[^>]*>/g, "")
-            return accum +  "<br/>" + curr2.substring(0,curr2.length-10) + "···dispXMeetup";
+            var curr2 = curr.substring(0,curr.length-(50-18)).replace(/<[^>]*>/g, "")     
+            return accum +  "<br/>" + curr2.substring(0,curr2.length-10) + "··en·meetup.com";
      s
       }
   return accum +  "<br/>" + curr.substring(0,36)
