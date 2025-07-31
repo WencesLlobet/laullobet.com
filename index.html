@@ -61,6 +61,7 @@ body {
 
 
 <head>
+    <script src="./moment.min.js">
     </script>
 </head>
 
@@ -165,7 +166,7 @@ body {
     A. soportó ser filmado (jamás se hace)</br>
     Muchas gracias por su valentía</br></br>
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/t67om37kzH0?" title="VÍDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/t67om37kzH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <pre>
 </pre>
 --
@@ -428,11 +429,11 @@ function loadTable(callback){
       if (curr.includes("RESERVALA") && curr.includes("1 attendee")){     
             var curr2 = curr.substring(0,curr.length-(50-18)).replace(/<[^>]*>/g, "")
             return accum +  "<br/>" + curr2.substring(0,curr2.length-10) + "···dispXMeetup";
-      }
+     s
       }
   return accum +  "<br/>" + curr.substring(0,36)
 }).replaceAll("<br/>··················","") + "<br/>____________________________________"
-
+}
 callback(render)
 }
 var step = 1;
