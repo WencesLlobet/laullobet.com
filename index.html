@@ -429,7 +429,7 @@ function loadTable(callback){
       }
       if (curr.includes("RESERVALA") && curr.includes("1 attendee")){     
             var curr2 = curr.substring(0,curr.length-(50-18)).replace(/<[^>]*>/g, "")     
-            return accum +  "<br/>" + curr2.substring(0,curr2.length-10) + "··en·meetup.com";
+            return accum +  "<br/>" + curr2.substring(0,curr2.length-10) + "·en·meetup.com";
      s
       }
   return accum +  "<br/>" + curr.substring(0,36)
