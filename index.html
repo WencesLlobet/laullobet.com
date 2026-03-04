@@ -30,7 +30,16 @@ function launchIntoFullscreen(element) {
     element.classList.toggle('fullscreen');
   }
 }
+function fullscreenchanged(event) {
+  if (document.fullscreenElement) {
+    console.log(`Element: ${document.fullscreenElement.id} entered fullscreen mode.`);
+  } else {
+    console.log(`Element: EXIT fullscreen mode.`);
+    exitFullscreen()
+  }
 
+  document.addEventListener("fullscreenchange", fullscreenchanged);
+}
 function lightbox_open() {
   var lightBoxVideo = document.getElementById("VisaChipCardVideo");
   window.scrollTo(0, 0);
