@@ -30,6 +30,14 @@ function launchIntoFullscreen(element) {
     element.classList.toggle('fullscreen');
   }
 }
+function lightbox_close() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  lightBoxVideo.pause();
+}
+
+
+
+
 function fullscreenchanged(event) {
   if (document.fullscreenElement) {
     console.log(`Element: ${document.fullscreenElement.id} entered fullscreen mode.`);
@@ -38,8 +46,12 @@ function fullscreenchanged(event) {
     exitFullscreen()
   }
 
-  document.addEventListener("fullscreenchange", fullscreenchanged);
 }
+
+
+
+document.addEventListener("fullscreenchange", fullscreenchanged);
+
 function lightbox_open() {
   var lightBoxVideo = document.getElementById("VisaChipCardVideo");
   window.scrollTo(0, 0);
@@ -51,10 +63,7 @@ function lightbox_open() {
   launchIntoFullscreen(document.getElementById('video-container'));
 }
 
-function lightbox_close() {
-  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-  lightBoxVideo.pause();
-}
+
 
 
 function playvideo(id){
@@ -74,6 +83,18 @@ video.appendChild(source);
 
 video.load();
 lightbox_open()
+}
+
+function exitFullscreen() {
+  lightbox_close()
+  document.getElementById('video-container').style.display = 'none';
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  }
 }
 
 </script>
@@ -190,7 +211,7 @@ lightbox_open()
 - Sábados o Domingos, 10am-11.30am o 12am-1.30pm</br> </br>
 - Envíame un whatsapp ! <a href="tel:+34641603016">641603016</a></br> </br>
 - En un coworking</br> </br>
-- <a type=”button” onClick="playvideo('4-dd')"> Conóceme</a></br> </br></h2>
+- <a type=”button” style="color:blue" onClick="playvideo('4-dd')"> Conóceme</a></br> </br></h2>
 
 <div id="video-container" class="container">
     <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
