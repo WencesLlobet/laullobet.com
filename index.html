@@ -97,6 +97,23 @@ function exitFullscreen() {
   }
 }
 
+document.addEventListener('click', function (event) {
+  if (!event.target.matches('.btn')) return;
+
+  event.preventDefault();
+
+  const fullscreenElement =
+    document.fullscreenElement ||
+    document.mozFullScreenElement ||
+    document.webkitFullscreenElement ||
+    document.msFullscreenElement;
+  if (fullscreenElement) {
+    exitFullscreen();
+  } else {
+    launchIntoFullscreen(document.getElementById('video-container'));
+  }
+});
+
 </script>
 </head>  
 <style>
@@ -209,9 +226,9 @@ function exitFullscreen() {
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
 <h2>- Caminos personalizados para alcanzar tus metas </br> </br>
 - Sábados o Domingos, 10am-11.30am o 12am-1.30pm</br> </br>
-- Envíame un whatsapp ! <a href="tel:+34641603016">641603016</a></br> </br>
-- En un coworking</br> </br>
-- <a type=”button” style="color:blue" onClick="playvideo('4-dd')"> Conóceme</a></br> </br></h2>
+- En un coworking del centro de BCN</br> </br>
+- Envíame un whatsapp! <a href="tel:+34641603016" style="text-decoration:none">641603016</a></br> </br>
+- <a type=”button” style="color:blue" onClick="playvideo('presentacion-profe')"> Conóceme</a></br> </br></h2>
 
 <div id="video-container" class="container">
     <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
